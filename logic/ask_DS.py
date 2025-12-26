@@ -22,6 +22,7 @@ async def get_message(data: dict) -> dict:
             temperature=0.6,
             max_tokens=200
         )
+
         print(response.choices[0].message.content)
         return response.choices[0].message.content
     except RateLimitError:
