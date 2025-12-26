@@ -17,7 +17,6 @@ jobs:
       IMAGE_BASE: ghcr.io/rozzenrose/ds_asker
       IMAGE: ghcr.io/rozzenrose/ds_asker:${{ github.sha }}
 
-
     steps:
       # 1️ Клонируем код
       - name: Checkout
